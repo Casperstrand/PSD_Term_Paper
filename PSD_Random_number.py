@@ -20,3 +20,7 @@ class rannumber:
         for x in range(self.amount):
             print(random.randint(self.minRange, self.maxRange))
 
+while True:
+    values = input("Enter the amount of numbers and the range for random: ")
+    values_list = values.split(" ")
+    rannumber(int(values_list[0]),int(values_list[1]),int(values_list[2])).getRandomNumber()
