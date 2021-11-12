@@ -21,6 +21,9 @@ class rannumber:
             print(random.randint(self.minRange, self.maxRange))
 
 while True:
-    values = input("Enter the amount of numbers and the range for random: ")
-    values_list = values.split(" ")
-    rannumber(int(values_list[0]),int(values_list[1]),int(values_list[2])).getRandomNumber()
+    values = input("Enter the amount of numbers and the range for random or enter x to exit: ")
+    if values == "x":
+        break
+    else:
+        values_list = values.split(" ")
+        rannumber(int(values_list[0]),int(values_list[1]),int(values_list[2])).getRandomNumber()
